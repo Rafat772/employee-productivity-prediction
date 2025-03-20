@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productivity Predictor - Input</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h2 class="mb-4 text-center">Enter Employee & Task Details</h2>
+
+        <form action="/submit" method="post" class="row g-3 bg-white p-4 rounded shadow-sm">
+
+            <!-- Quarter -->
+            <div class="col-md-6">
+                <label class="form-label">Quarter</label>
+                <select name="quarter" class="form-select" required>
+                    <option value="Quarter1">Quarter 1</option>
+                    <option value="Quarter2">Quarter 2</option>
+                    <option value="Quarter3">Quarter 3</option>
+                    <option value="Quarter4">Quarter 4</option>
+                </select>
+            </div>
+
+            <!-- Month -->
+            <div class="col-md-6">
+                <label class="form-label">Month</label>
+                <select name="month" class="form-select" required>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+
+            <!-- Department -->
+            <div class="col-md-6">
+                <label class="form-label">Department</label>
+                <select name="department" class="form-select" required>
+                    <option value="sewing">Sewing</option>
+                    <option value="finishing">Finishing</option>
+                </select>
+            </div>
+
+            <!-- Day -->
+            <div class="col-md-6">
+                <label class="form-label">Day</label>
+                <select name="day" class="form-select" required>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+
+            <!-- Team -->
+            <div class="col-md-6">
+                <label class="form-label">Team</label>
+                <select name="team" class="form-select" required>
+                    <option value="Team 1">Team 1</option>
+                    <option value="Team 2">Team 2</option>
+                    <option value="Team 3">Team 3</option>
+                    <option value="Team 4">Team 4</option>
+                    <option value="Team 5">Team 5</option>
+                </select>
+            </div>
+
+            <!-- Targeted Productivity -->
+            <div class="col-md-6">
+                <label class="form-label">Targeted Productivity</label>
+                <input type="number" step="0.01" name="targeted_productivity" class="form-control" required>
+            </div>
+
+            <!-- SMV -->
+            <div class="col-md-6">
+                <label class="form-label">SMV</label>
+                <input type="number" step="0.01" name="smv" class="form-control" required>
+            </div>
+
+            <!-- WIP -->
+            <div class="col-md-6">
+                <label class="form-label">WIP</label>
+                <input type="number" name="wip" class="form-control" required>
+            </div>
+
+            <!-- Overtime -->
+            <div class="col-md-6">
+                <label class="form-label">Overtime (minutes)</label>
+                <input type="number" name="overtime" class="form-control" required>
+            </div>
+
+            <!-- Incentive -->
+            <div class="col-md-6">
+                <label class="form-label">Incentive</label>
+                <input type="number" name="incentive" class="form-control" required>
+            </div>
+
+            <!-- Idle Time -->
+            <div class="col-md-6">
+                <label class="form-label">Idle Time</label>
+                <input type="number" step="0.01" name="idle_time" class="form-control" required>
+            </div>
+
+            <!-- Idle Men -->
+            <div class="col-md-6">
+                <label class="form-label">Idle Men</label>
+                <input type="number" name="idle_men" class="form-control" required>
+            </div>
+
+            <!-- Style Change -->
+            <div class="col-md-6">
+                <label class="form-label">No. of Style Change</label>
+                <input type="number" name="no_of_style_change" class="form-control" required>
+            </div>
+
+            <!-- Workers -->
+            <div class="col-md-6">
+                <label class="form-label">No. of Workers</label>
+                <input type="number" name="no_of_workers" class="form-control" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-success btn-lg">Predict Productivity</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
